@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Unique page title - My Site</title>
+
+</head>
+
+<body>
+    <h2>Пользователи</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Users[0].Name)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>
+                        @user.Name
+
+                        <a class="btn btn-danger" asp-page="Users" asp-page-handler="Remove" asp-route-id="@user.Id">Удалить</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+     
+</body>
+</html>

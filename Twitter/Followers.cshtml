@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Unique page title - My Site</title>
+
+</head>
+
+<body>
+
+    <h1> Подписки @Model.ProfileUser.Name </h1>
+
+    <ul>
+        @{
+            foreach (var user in Model.Followeds)
+            {
+                <li> <a class="btn btn-success" asp-page="Profile" asp-route-id="@user.Id">@user.Name</a> </li>
+            }
+        }
+    </ul>
+
+</body>
+</html>

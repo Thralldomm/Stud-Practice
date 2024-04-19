@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Unique page title - My Site</title>
+
+</head>
+
+<body>
+
+
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+
+        <ul class="dropdown-menu">
+
+            <li><a href="#">Профиль</a></li>
+            <li><a href="#">Обновление</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Выход</a></li>
+
+        </ul>
+    </li>
+
+
+
+        <div class="col-md-4">
+            <h1>
+                Name
+            </h1>
+
+
+
+
+        <form method="post">
+
+            @{
+                if (Model.CurrentUser != Model.ProfileUser)
+                {
+                    if (!Model.IsFollow)
+                    {
+                        <button class="btn btn-success" type="submit">Подписаться</button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-danger" type="submit">Отписаться</button>
+                    }
+
+                }
+
+            }
+
+        </form>
+
+
+        <a class="btn btn-primary" asp-page="Followers" asp-route-id=@Model.ProfileUser.Id>Подписчики</a>
+        <a class="btn btn-primary" asp-page="Followeds" asp-route-id=@Model.ProfileUser.Id>Подписки</a>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="row">
+
+    <div class="col-md-4">
+        <h2>
+            @Model.ProfileUser.Name
+            Cообщения @Model.ProfileUser.Microposts.Count()
+        </h2>
+
+            <aside>
+                <section class="micropost_form">
+                    <form action="" method="post" class="form-signin" role="form">
+                        <textarea rows="4" cols="50" type="text" name="message" required autofocus></textarea>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Отправить</button>
+                    </form>
+                </section>
+            </aside>
+
+
+            <a asp-page="Index" asp-page-handler="Delete" asp-route-id="@post.Id" class="btn btn-info">Удалить</a>
+    </div>
+
+    <div class="col-md-8">
+
+        <ol class="microposts">
+            @foreach (var post in Model.ProfileUser.Microposts)
+            {
+                <p>
+                    <b>@post.User.Name: </b> @post.Content
+                    <a asp-page="Profile" asp-page-handler="Delete" asp-route-id="@Model.ProfileUser.Id" asp-route-messageid="@post.Id" class="btn btn-danger">Удалить</a>
+                </p>
+            }
+        </ol>
+    </div>
+
+
+</div>
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+</body>
+</html>

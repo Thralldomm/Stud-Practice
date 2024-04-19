@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Unique page title - My Site</title>
+
+</head>
+
+<body>
+
+
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form method="post" class="form-signin" role="form">
+
+                <div asp-validation-summary="All"></div>
+
+                <span asp-validation-for="Input.Name"></span>
+                <input type="text" asp-for="Input.Name" class="form-control" placeholder="Имя" autofocus>
+
+                <span asp-validation-for="Input.Email"></span>
+                <input type="email" asp-for="Input.Email" class="form-control" placeholder="Почта" autofocus>
+
+                <span asp-validation-for="Input.Password"></span>
+                <input type="password" asp-for="Input.Password" class="form-control" placeholder="Пароль" required autofocus>
+
+                <span asp-validation-for="Input.PasswordConfirmation"></span>
+                <input type="password" asp-for="Input.PasswordConfirmation" class="form-control" placeholder="Повторите пароль" required>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Создание пользователя
+                </button>
+            </form>
+            <p>Новый пользователь? <a asp-page="Sign">Регистрация!</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

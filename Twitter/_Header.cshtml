@@ -1,0 +1,79 @@
+﻿@await Html.PartialAsync("_NameSample")
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Unique page title - My Site</title>
+
+</head>
+
+<body>
+
+	<a class="btn btn-lg btn-primary" href="#">Регистрация</a>
+
+	<div class="row">
+
+            <div class="col-md-4">
+                <h2>
+                    @Model.CurrentUser.Name
+                    <p>
+                        Cообщения @Model.CurrentUser.Microposts.Count()
+                    </p
+                </h2>
+
+                <aside>
+                    <section class="micropost_form">
+                        <form action="" method="post" class="form-signin" role="form">
+                            <textarea rows="4" cols="50" type="text" name="message" required autofocus></textarea>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Отправить</button>
+                        </form>
+                    </section>
+                </aside>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <ol class="microposts">
+                    @foreach (var post in Model.CurrentUser.Microposts)
+                    {
+                        <p>
+                            <b>@post.User.Name: </b> @post.Content
+                            <a asp-page="Index" asp-page-handler="Delete" asp-route-id="@Model.CurrentUser.Id" asp-route-messageid="@post.Id" class="btn btn-danger">Удалить</a>
+                        </p>
+                    }
+                </ol>
+            </div>
+
+
+
+             <div class="col-md-8">
+     <h3>
+         Cообщения @Model.Messages.Count()
+     </h3>
+     <ol class="microposts">
+
+         @foreach (var post in Model.Messages.OrderByDescending(p => p.CreatedAt) )
+         {
+             <p>
+                
+                @Time.HumanView(post.CreatedAt)
+                 <b>@post.User.Name: </b> @post.Content
+                 
+                  <a asp-page="Index" asp-page-handler="Delete" asp-route-id="@post.Id" class="btn btn-info">Удалить</a>
+
+             </p>
+         }
+
+     </ol>
+ </div>
+
+
+
+        </div>
+
+</body>
+</html>

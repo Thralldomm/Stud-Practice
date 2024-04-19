@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Twitter
+build_property.RootNamespace = Twitter
+build_property.ProjectDir = C:\Users\123\source\repos\Twitter\Twitter\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\123\source\repos\Twitter\Twitter
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXV0aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Followeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Rm9sbG93ZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Followers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Rm9sbG93ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Sign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2lnbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = X0hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/123/source/repos/Twitter/Twitter/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-agsnpyofyk
